@@ -9,7 +9,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.kzdev.recyclerviewwithmultipleviewtype.R
 
-class MultiViewAdapter(val context: Context, val items: MutableList<Any>) :RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class MultiViewAdapter(private val context: Context, private val items: MutableList<Any>) :
+    RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     class ImageViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val img: ImageView = itemView.findViewById(R.id.img)
